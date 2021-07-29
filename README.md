@@ -3,3 +3,5 @@
 
 Finite element analysis of a circular pipe subjected to creep with viscoelastic material model
 is implemented in this project.
+
+More details will be added soon...
