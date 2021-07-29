@@ -21,17 +21,17 @@ def r_element(a,b,n_e):
     Output-> node location"""
     
     #Input Parameters
-    meshrefinementfactor = 2 #ratio of element sizes at outer and inner radius
+    mesh_refinement_factor = 2 #ratio of element sizes at outer and inner radius
     
     #ratio between element sizes of subsequent elements for a geometric series
-    q = meshrefinementfactor**(1/(n_e-1))
+    q = mesh_refinement_factor**(1/(n_e-1))
     #size of first interval
     dr = (b-a)*(1-q)/(1-meshrefinementfactor*q)
     rnode = a
-    rnodes = [a]
+    rnodes = list(a)
     #loop over all elements
     for i in range(0,n_e):
-        rnode=rnode+dr
+        rnode += dr
         rnodes.append(rnode)
         dr = dr*q
     return np.array(rnodes)
