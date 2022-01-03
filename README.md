@@ -1,7 +1,6 @@
 # Finite Element Analysis of 1D axisymmetric element
 ----------------------------------------------------
 
-Finite element analysis of a circular pipe subjected to creep with viscoelastic material model
-is implemented in this project.
+The task here pertains to programming a ```FEM``` solver for a thick-walled pipe subjected to creep conditions. Plain strain conditions are assumed.
 
-More details will be added soon...
+
